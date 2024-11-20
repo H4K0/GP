@@ -1,2 +1,2 @@
 # GP
-Automate task 
+Automate boring task 
