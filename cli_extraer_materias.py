@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 sl = ['Álgebra', 'Arts', 'Biology', 'Citizenship', 'Computer Science', 'Desarrollo Humano', 'English', 'Estadística', 'Filosofía', 'Física', 'Geography', 'Geometría', 'Historia', 'Lenguaje', 'Ortografía', 'Physical Education', 'Química']
 superior = []
 alto = []
