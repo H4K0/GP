@@ -7,10 +7,19 @@ bajo = []
 superior_fin = ""
 alto_fin = ""
 bajo_fin = ""
-contador = 1
+prueba = "si"
+x=0
 
-while True:
-    text = input("Ingresa la notas separas por un espacio: ")
+while prueba == "si":
+    x = x+1
+    if x == 1:
+        text = input("Ingresa la notas separas por un espacio: ")
+    else:
+        prueba = input("Deseas ingresar otro estudiante: ")
+    #text = input("Ingresa la notas separas por un espacio: ")
+
+
+
     tbl = str.maketrans('\t', ' ')
     text = text.translate(tbl)
     new_text = text.replace(",",".")
@@ -43,31 +52,8 @@ while True:
         else:
             superior_fin = superior_fin + superior[i] + ", "
 
-    print("#######################")
-    print("# Materias ordenadas: #")
-    print("######################")
     print("Superior: " + superior_fin)
     print("Alto: " + alto_fin)
     print("Bajo: " + bajo_fin)
-    print("#################################################################")
-    print("")
-    prueba = input("Deseas ingresar otro estudiante [S/N | s/n | sí/no]: ")
-    if prueba == "N":
-        break
-    if prueba == "n":
-        break
-    if prueba == "no":
-        break
-    else:
-        contador += 1
-        superior = []
-        alto = []
-        bajo = []
-        superior_fin = ""
-        alto_fin = ""
-        bajo_fin = ""
 
-if contador == 1:
-    print("Realizaste " + str(contador) + " relación de asignaturas.\nGracias por usar código BlahCorp")
-else:
-    print("Realizaste " + str(contador) + " relaciones de asignaturas.\nGracias por usar código BlahCorp")
+print("Gracias por usar código BlahCorp")
