@@ -1,6 +1,2 @@
-        #print("Vamos a realizar otra suma")
-        #contador += 1
-    #else:
-    #    break
-    #if prueba == "N" or "n" or "no":
-    #    break
+Espacio de notas y transciones:
+
