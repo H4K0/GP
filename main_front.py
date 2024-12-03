@@ -66,8 +66,6 @@ class TestPanel(wx.Panel):
 def runTest(frame, nb, log):
     win = TestPanel(nb, -1, log)
     return win
-
-
 #----------------------------------------------------------------------
 
 overview = """<html><body>
