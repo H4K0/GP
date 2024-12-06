@@ -3,13 +3,25 @@
 import wx
 import sys
 
+
 class MyFrame(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, None, -1, "My Frame", size=(300, 300))
+        
+        
+        
         panel = wx.Panel(self, -1)
         panel.Bind(wx.EVT_MOTION, self.OnMove)
         wx.StaticText(panel, -1, "Pos:", pos=(10, 12))
         self.posCtrl = wx.TextCtrl(panel, -1, "", pos=(40, 10))
+
+    def OnInit(self):
+        print >> "OnInit" #Writing to stdout
+        self.frame = Frame(parent=None, id=-1, title='Startup') #Creating  the frame
+        self.frame.Show()
+        self.SetTopWindow(self.frame)
+        print >> sys.stderr, "A pretend error message" #Writing to stderr
+        return True
 
     def OnMove(self, event):
         pos = event.GetPosition()
